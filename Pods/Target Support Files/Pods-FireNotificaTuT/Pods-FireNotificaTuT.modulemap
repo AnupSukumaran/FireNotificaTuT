@@ -1,0 +1,6 @@
+framework module Pods_FireNotificaTuT {
+  umbrella header "Pods-FireNotificaTuT-umbrella.h"
+
+  export *
+  module * { export * }
+}

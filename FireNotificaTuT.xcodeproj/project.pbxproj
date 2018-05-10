@@ -12,6 +12,10 @@
 		5A172CF220A34A4300E6FE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A172CF020A34A4300E6FE1F /* Main.storyboard */; };
 		5A172CF420A34A4700E6FE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A172CF320A34A4700E6FE1F /* Assets.xcassets */; };
 		5A172CF720A34A4700E6FE1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A172CF520A34A4700E6FE1F /* LaunchScreen.storyboard */; };
+		5A172CFF20A35EBD00E6FE1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A172CFE20A35EBC00E6FE1F /* GoogleService-Info.plist */; };
+		5A172D0220A365E700E6FE1F /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A172D0120A365E700E6FE1F /* FirebaseCore.framework */; };
+		5A172D0420A365E700E6FE1F /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A172D0320A365E700E6FE1F /* FirebaseMessaging.framework */; };
+		F7D5B59AE1BD855D21BEE029 /* Pods_FireNotificaTuT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56B22482B2A6474867DA7EE /* Pods_FireNotificaTuT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,13 @@
 		5A172CF320A34A4700E6FE1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A172CF620A34A4700E6FE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A172CF820A34A4700E6FE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A172CFE20A35EBC00E6FE1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A172D0020A3655300E6FE1F /* FireNotificaTuT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FireNotificaTuT.entitlements; sourceTree = "<group>"; };
+		5A172D0120A365E700E6FE1F /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A172D0320A365E700E6FE1F /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6516E7E211CB993118D1B426 /* Pods-FireNotificaTuT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireNotificaTuT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireNotificaTuT/Pods-FireNotificaTuT.debug.xcconfig"; sourceTree = "<group>"; };
+		A56B22482B2A6474867DA7EE /* Pods_FireNotificaTuT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireNotificaTuT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE66922724C0C697A1D342DE /* Pods-FireNotificaTuT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireNotificaTuT.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireNotificaTuT/Pods-FireNotificaTuT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A172D0220A365E700E6FE1F /* FirebaseCore.framework in Frameworks */,
+				5A172D0420A365E700E6FE1F /* FirebaseMessaging.framework in Frameworks */,
+				F7D5B59AE1BD855D21BEE029 /* Pods_FireNotificaTuT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +54,8 @@
 			children = (
 				5A172CEB20A34A4200E6FE1F /* FireNotificaTuT */,
 				5A172CEA20A34A4200E6FE1F /* Products */,
+				99AEF44D72BB87B6111FE8A4 /* Pods */,
+				A08891C3E1BF85DCA6CBE97B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +70,8 @@
 		5A172CEB20A34A4200E6FE1F /* FireNotificaTuT */ = {
 			isa = PBXGroup;
 			children = (
+				5A172D0020A3655300E6FE1F /* FireNotificaTuT.entitlements */,
+				5A172CFE20A35EBC00E6FE1F /* GoogleService-Info.plist */,
 				5A172CEC20A34A4200E6FE1F /* AppDelegate.swift */,
 				5A172CEE20A34A4200E6FE1F /* ViewController.swift */,
 				5A172CF020A34A4300E6FE1F /* Main.storyboard */,
@@ -64,6 +82,25 @@
 			path = FireNotificaTuT;
 			sourceTree = "<group>";
 		};
+		99AEF44D72BB87B6111FE8A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6516E7E211CB993118D1B426 /* Pods-FireNotificaTuT.debug.xcconfig */,
+				FE66922724C0C697A1D342DE /* Pods-FireNotificaTuT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A08891C3E1BF85DCA6CBE97B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A172D0120A365E700E6FE1F /* FirebaseCore.framework */,
+				5A172D0320A365E700E6FE1F /* FirebaseMessaging.framework */,
+				A56B22482B2A6474867DA7EE /* Pods_FireNotificaTuT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A172CFB20A34A4700E6FE1F /* Build configuration list for PBXNativeTarget "FireNotificaTuT" */;
 			buildPhases = (
+				BAA741B3F3E07130E1F9307B /* [CP] Check Pods Manifest.lock */,
 				5A172CE520A34A4200E6FE1F /* Sources */,
 				5A172CE620A34A4200E6FE1F /* Frameworks */,
 				5A172CE720A34A4200E6FE1F /* Resources */,
+				EA1CFA1755C5B459FCEF18F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +135,11 @@
 				TargetAttributes = {
 					5A172CE820A34A4200E6FE1F = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,12 +167,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A172CF720A34A4700E6FE1F /* LaunchScreen.storyboard in Resources */,
+				5A172CFF20A35EBD00E6FE1F /* GoogleService-Info.plist in Resources */,
 				5A172CF420A34A4700E6FE1F /* Assets.xcassets in Resources */,
 				5A172CF220A34A4300E6FE1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BAA741B3F3E07130E1F9307B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FireNotificaTuT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA1CFA1755C5B459FCEF18F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FireNotificaTuT/Pods-FireNotificaTuT-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireNotificaTuT/Pods-FireNotificaTuT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A172CE520A34A4200E6FE1F /* Sources */ = {
@@ -278,8 +366,10 @@
 		};
 		5A172CFC20A34A4700E6FE1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6516E7E211CB993118D1B426 /* Pods-FireNotificaTuT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FireNotificaTuT/FireNotificaTuT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8GUP93935;
 				INFOPLIST_FILE = FireNotificaTuT/Info.plist;
@@ -296,8 +386,10 @@
 		};
 		5A172CFD20A34A4700E6FE1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE66922724C0C697A1D342DE /* Pods-FireNotificaTuT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FireNotificaTuT/FireNotificaTuT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8GUP93935;
 				INFOPLIST_FILE = FireNotificaTuT/Info.plist;
